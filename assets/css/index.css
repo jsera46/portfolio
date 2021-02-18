@@ -1,4 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mycontainer {
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+/* Navbar */
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: transparent;
+    background-image: url("/assets/images/working.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+}
+nav .mycontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.hamburger-menu {
+    width: 1.55rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar {
+    position: relative;
+    width: 1.2rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar::before, .bar::after {
+    content: '';
+    position: absolute;
+    width: 1.55rem;
+    height: 3px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.bar::before {
+    transform: translateY(-8px);
+}
+.bar::after {
+    transform: translateY(8px);
+}
+
+/* Main Content */
+.mainContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.headerimg {
+    width: 50%;
+    height: 30vh;
+    border-radius:50%;
+    border: 1px solid #B0967B;
+    box-shadow: 1px 1px 10px #B0967B;
+}
+.mainContent h2, .mainContent p {
+    color: #fff ;
+    text-shadow: 2px 2px 7px #B0967B;
 }

@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -14,39 +19,28 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/9ee13d6138.js" crossorigin="anonymous"></script>
+
+    
   </head>
   <body>
       <!-- Navbar -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">JAMAR PORTFOLIO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>              
-        </ul>
-        <a href="#contact" class="cta"><button>Contact</button></a>
-      </div>
-    </div>
-  </nav> -->
      <header>
        <nav>
          <div class="mycontainer">
            <h3 class="logo">JAMAR<span>PORTFOLIO</span></h3>
-           <div class="hamburger-menu">
-             <div class="bar"></div>
+           <div class="hamburger-menu" id="burger">
+             <div class="bar" id="bars"></div>
            </div>
+         </div>
+         <div>
+          <div class="menu-content glass animate__animated animate__faster" id="navMC">
+            <ul class="nav-menu">
+              <li>Home</li>
+              <li>Projects</li>
+              <li>About</li>
+            </ul>
+            <button class="contact-btn"><a href="">Contact</a></button>
+          </div>
          </div>
        </nav>
 
@@ -64,27 +58,28 @@
     
 
   <!-- Projects -->
-  <!-- <section>
-    <div class="container">
+  <section class="projects">
+    <div class="mycontainer">
         <h3>Recents Projects: Sample of some my work from past year.</h3>
         <hr>
         <h5>My Latest Projects:</h5>
-         <div class="col-md">
+         <div class="col-md project">
              <img src="/assets/images/project1.png" alt="img1">
          </div>
-         <button><a>CHECK IT OUT</a></button>
+         <button class="btnCheckOut"><a>CHECK IT OUT</a></button>
     </div>
-  </section>       -->
+  </section>      
 
   <!-- About me -->
-  <section>
-      <div class="container">
+  <section class="aboutMe">
+      <div class="mycontainer">
           <h3>ABOUT ME</h3>
           <p>Find out who I am, where I'm from and what I'm all about.</p>
+          <hr>
 
           <div class="row">
               <div class="col-md">
-                  <!-- <img src="assets/images/bgimg.jpg" alt="Self Photo"> -->
+                  <img src="assets/images/bgimg.jpg" alt="Self Photo">
               </div>
               <div class="col-md">
                   <h4>Who I Am</h4>
@@ -93,26 +88,51 @@
                   <p>I am currently working as OJT in the Classify Inc.. I am always available to discuss your project over the phone or via Skype. These days I enjoy spending my free time reading novels online, watching youtube videos and playing.</p>
                   <hr>
                   <p>If you like my work and have some cool project to work on, just send me direct message or click the button bellow to get list of my contact info.</p>
-                  <button>Contact me</button>
+                  <button class="bntContact"><a href="">Contact me</a></button>
               </div>
           </div>
       </div>
   </section>
 
   <!-- Contact me -->
-  <section>
-  <h3>Contact me</h3>
-  <p>Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
-  <hr>
-  <div class="contactmee">
-      <div class="col-md">
-        <i class="fab fa-facebook-f">Add me on Facebook</i>
-        <i class="fab fa-github">Follow me on github</i>
-        <i class="fab fa-viber">Add me on viber: +639553205870</i>
-        <i class="fab fa-skype">Add me on Skype: +639553205870</i>
+  <section class="contactMe">
+    <div class="mycontainer">
+      <h3>Contact me</h3>
+      <p>Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
+      <hr>
+      <div>
+          <div class="col-md contactmee">
+            <div class="fab fa-facebook-f">
+              Add me on Facebook
+            </div>
+            <div class="fab fa-github">
+              Follow me on github
+            </div>
+            <div class="fab fa-viber">
+              Add me on viber: +639553205870
+            </div>
+            <div class="fab fa-skype">
+              Add me on Skype: jsera46@gmail.com
+            </div>
+
+
+
+
+            
+            
+            
+            
+          </div>
+          
       </div>
-      <div class="col-md">
-        <h2 class="text-primary text-center">Email me</h2>
+    </div>
+  </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="col-md">
+          <h2 class="text-primary text-center">Email me</h2>
+        </div>
         <hr>
         <form 
           action="https://formspree.io/f/moqpkdzz"
@@ -132,13 +152,6 @@
               </div>
               <button type="submit" class="btn btn-primary">Send</button>
           </form>
-          <hr>
-      </div>
-  </div>
-  </section>
-
-      <!-- Footer -->
-      <footer>
           <div class="fonticon">
               <div class="col-sm">
                 <i class="fab fa-facebook-f"></i>
@@ -158,5 +171,6 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
   </body>
 </html>

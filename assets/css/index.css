@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.btn-primary {
+    border-color: transparent;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -71,6 +73,7 @@ nav .mycontainer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .bar {
@@ -133,7 +136,7 @@ nav .mycontainer {
     flex-direction: column;
     align-items: center;
     background: silver;
-   
+    z-index: 2;
 }
 .nav-menu {
     padding: 0;
@@ -146,6 +149,7 @@ nav .mycontainer {
     text-shadow: 3px 3px #B0967B ;
     border-radius: 5px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .contact-btn {
     border-radius: 8px;
@@ -197,6 +201,7 @@ nav .mycontainer {
     position: relative;
     font-size: 1.3rem;
     top: -20px;
+    z-index: 1;
 }
 .projects h5 {
     font-size: 1.1rem;
@@ -225,6 +230,7 @@ nav .mycontainer {
     background-color: #181511;
     color: #f3f3f3;
     text-align: center;
+    text-shadow: 2px 1px 7px #B0967B;
 }
 .aboutME h3 {
     font-size: 1.3rem;
@@ -237,12 +243,14 @@ nav .mycontainer {
 .bntContact {
     border-radius: 8px;
     padding: 8px;
-    background-color: #B0967B;
+    background-color: #181511;
+    box-shadow: 1px 1px 8px #f3f3f3;
 }
 .bntContact a {
     text-decoration: none;
-    color: #000;
+    color: #f3f3f3;
     font-weight: 550;
+    text-shadow: 1px 1px 7px #B0967B;
 }
 
 /* Contact me */
@@ -270,4 +278,224 @@ nav .mycontainer {
 .fab {
     margin-top: 10px;
     font-weight: 550;
+}
+
+/* Footer */
+footer {
+  color: #f3f3f3;
+  background-color: #273037;
+  position: absolute;
+  padding-bottom: 1rem;
+  width: 100vw;
+}
+.fHeader {
+  color: #f3f3f3 !important;
+  text-shadow: 2px 3px 9px #B0967B;
+  margin-top: 20px;
+}
+form {
+    position: relative;
+}
+footer label {
+  text-shadow: 2px 3px 9px #B0967B !important;
+}
+.btnFooter {
+  background-color: #181511;
+  color: #f3f3f3;
+  text-shadow: 1px 1px 7px #B0967B;
+  position: absolute;
+  right: 0;
+  top: 300px;
+  border-radius: 8px;
+}
+.btn-primary:hover {
+    background-color: #181511;
+    border-color: #181511;
+}
+.fonticon {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.fonticon i {
+    margin: 10px;
+    color: #f3f3f3;
+}
+.alright {
+    margin-top: 80px;
+}
+.alright p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Nav */
+    header {
+        height: 70vh;
+    }
+    .logo {
+        margin-left: 2rem;
+    }
+    .bar {
+        right: 2rem;
+    }
+    .bar1 {
+        right: 2rem;
+    }
+    .menu-content {
+        left: 3.5rem;
+    }
+    /* Main Content */
+    .mainContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    text-align: center;
+    margin-top: 14rem;
+    }
+    .headerimg {
+        width: 80%;
+        height: 30vh;
+        border-radius:50%;
+        box-shadow: 1px 1px 10px #B0967B;
+    }
+    .mainContent h2, .mainContent p {
+        font-size: 2.1rem;
+        position: relative;
+        top: 7rem;
+    }
+
+    /* Projects */
+     .projects h3 {
+        font-size: 2.2rem;
+        top: -40px;
+    }
+     .projects h5 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    } 
+    .btnCheckOut {
+        margin-top: 2rem;
+        padding: 0.8rem;
+    } 
+    /* About Me */
+    .aboutMe {
+        margin-top: 40.2rem;
+        padding-bottom: 30px;
+    }
+    .aboutMeP {
+        font-size: 1.3rem
+    }
+    .aboutMe .row {
+        margin-top: 2.5rem;
+    }
+    .aboutMe img {
+        height: 20rem;
+        margin-top: 4rem;
+    }
+    
+    /* Contact me */
+    .contactMe {
+        height: 45vh;
+    }
+    .contactMe h3 {
+        font-size: 3rem;
+    }
+    .contactMep {
+        font-size: 1.8rem;
+    }
+    .contactmee {
+        font-size: 2rem;
+        
+    }
+    .fab {
+        margin-top: 1rem;
+    }
+    
+    /* Footer */
+    
+    footer {
+        left:0;
+        position: absolute;
+        bottom:-145rem;
+    }
+    footer .mycontainer {
+        padding: 0 3.5rem;
+    }
+    .fHeader {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .footerForm label {
+        /* text-shadow: 2px 3px 9px #B0967B !important; */
+        font-size: 2rem;
+    }
+    .btnFooter {
+        margin-top: 5rem;
+        padding: 1.4rem 1.6rem;
+        font-size: 1.5rem;
+        outline: transparent;
+    }
+    .fonticon {
+        top: 7rem;
+    }
+    .fonticon i {
+        margin: 1.4rem;
+    }
+    .alright {
+        margin-top: 9rem;
+    }
+    .alright p {
+        text-align: center;
+        margin-top: 30px;
+    }
+} 
+
+@media only screen and (min-width:1024px) {
+    .mycontainer {
+        padding: 0 3rem;
+    }
+    /* Nav */
+    .logo {
+        margin-left: 3rem;
+    }
+    .bar {
+        right: 3.2rem;
+    }
+    .bar1 {
+        right: 3.2rem;
+    }
+    .menu-content {
+        left: 4rem;
+    }
+
+    /* Projects */
+    .projects h3 {
+        font-size: 3rem;
+    }
+    .projects h5 {
+        font-size: 2.5rem;
+    }
+    /* About me */
+    .aboutMe {
+        padding-top: 3rem;
+        margin-top: 48rem;
+    }
+    .aboutMe .row {
+        margin-top: 3rem;
+    }
+
+    /* Contact Me */
+    .fab {
+        font-size: 2.5rem;
+    }
+    /* Email me */
+    footer {
+        bottom: -152rem;
+    }
 }

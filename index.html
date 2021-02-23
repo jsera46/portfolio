@@ -74,7 +74,7 @@
   <section class="aboutMe">
       <div class="mycontainer">
           <h3>ABOUT ME</h3>
-          <p>Find out who I am, where I'm from and what I'm all about.</p>
+          <p class="aboutMeP">Find out who I am, where I'm from and what I'm all about.</p>
           <hr>
 
           <div class="row">
@@ -98,7 +98,7 @@
   <section class="contactMe">
     <div class="mycontainer">
       <h3>Contact me</h3>
-      <p>Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
+      <p class="contactMep">Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
       <hr>
       <div>
           <div class="col-md contactmee">
@@ -114,14 +114,6 @@
             <div class="fab fa-skype">
               Add me on Skype: jsera46@gmail.com
             </div>
-
-
-
-
-            
-            
-            
-            
           </div>
           
       </div>
@@ -130,16 +122,17 @@
 
       <!-- Footer -->
       <footer>
-        <div class="col-md">
-          <h2 class="text-primary text-center">Email me</h2>
+        <div class="mycontainer">
+          <div class="col-md">
+          <h2 class="text-primary text-center fHeader">Email me</h2>
         </div>
         <hr>
-        <form 
+        <form class="footerForm"
           action="https://formspree.io/f/moqpkdzz"
           method="POST"
           enctype="multipart/form-data">
-              <div class="form-group">
-                <labe>Name</label>
+            <div class="form-group">
+                <label>Name</label>
                 <input type="text" class="form-control" name="name" required>
               </div>
               <div class="form-group">
@@ -147,21 +140,24 @@
                 <input type="email" class="form-control" name="_replyto" required>
               </div>
               <div class="form-group">
-                <labe>Your Message</label>
+                <label>Your Message</label>
                 <textarea class="form-control" rows="5" name="message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
+              <button type="submit" class="btn btn-primary btnFooter">Send</button>
           </form>
+        </div>
+        
           <div class="fonticon">
               <div class="col-sm">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-viber"></i>
-                <i class="fab fa-skype"></i>
-              </div>            
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fab fa-viber"></i></a>
+                <a href=""><i class="fab fa-skype"></i></a>
+              </div>
+              <hr class="hrfooterfont">      
           </div>
-          <hr>
-          <div>
+          
+          <div class="alright">
             <p class="h6">© 2021 | All right Reversed.</p>
           </div>
       </footer>
@@ -171,6 +167,7 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
   <script src="assets/js/index.js"></script>
   </body>
 </html>

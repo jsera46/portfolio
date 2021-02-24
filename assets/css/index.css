@@ -535,6 +535,9 @@ footer label {
     nav {
         border-bottom: none;
     }
+    .homeLink {
+        text-decoration: none;
+    }
     .logo {
         margin-left: 0;
     }
@@ -543,20 +546,97 @@ footer label {
         margin: auto 0;
         padding: 0 auto;
     }
+    .nav-menu li a {
+        text-decoration: none;
+        color: #f3f3f3;
+    }
     .nav-menu li {
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-shadow: none;
         margin-left: 1.5rem;
+        padding: 0 0.6rem;
     }
     .contact-btn {
         margin-top: -0.6rem;
         margin-left: 1.5rem;
     }
     .nav-menu a {
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-shadow: none;
         margin: 1px;
-        padding: 0 0.6rem;
+    }
+    .underline::after {
+        content: '';
+        transform: scaleX(1);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #B0967B;
+        transform-origin: bottom center;
+    }
+    .deskHome {
+        display: inline-block;
+        position: relative;
+    }
+    .deskHome::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #B0967B;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .deskHome:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .deskProjects{
+        display: inline-block;
+        position: relative;
+    }
+    .deskProjects::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #B0967B;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .deskProjects:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .deskAbout{
+        display: inline-block;
+        position: relative;
+    }
+    .deskAbout::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #B0967B;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .deskAbout:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
     /* mainContent */
     .mainContent {
@@ -587,11 +667,14 @@ footer label {
        color: #f3f3f3;
        text-align: center;
        text-shadow: 1px 1px 7px #B0967B;
+       padding: 0 0 2rem 0;
    }
-   .projectDesk h3 {
+   .projectsDesk h3 {
        font-size: 1.3rem;
+       position: relative;
+       padding: 1rem 0 0 0;
    }
-   .projectDesk h5 {
+   .projectsDesk h5 {
        font-size: 1rem;
    }
    .exampleProject {
@@ -613,15 +696,93 @@ footer label {
    .aboutMe {
        display: none;
    }
+   .aboutMeDesk {
+       display: inline-block;
+       background-color: #181511;
+       color: #f3f3f3;
+       text-align: center;
+       padding: 0 0 3rem 0;
+       text-shadow:  1px 1px 7px #B0967B;
+   }
+   .aboutMeDesk h3 {
+       padding: 1rem 0 0 0;
+   }
+   .aboutMeDesk img {
+       width: 45vw;
+   }
 
    /* Contact Me */
    .contactMe {
        display: none;
+   }
+   .contactMeDesk {
+       display: inline-block;
+       background-image: url('/assets/images/contactbg.jpg');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: 45vh;
+       padding-top: 1rem;
+       text-shadow: 1px 1px 7px #FC3840;
+   }
+
+   .contactMeDesk h3 {
+       font-size: 1.3rem;
+   }
+   .contactMeDesk p{
+       font-size: .9rem;
+   }
+   .contactMeDesk .dflex {
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .cmd {
+       padding: 0 4rem;
+       text-align: center;
+   }
+   .fab {
+       font-size: 1rem;
+       margin-bottom: .6rem;
+   }
+   form {
+       padding: 0 5rem;
+   }
+   .emailMe {
+        padding: 0 6rem;
+   }
+   .emailMe h3 {       
+    color: #000 !important;
+   }
+   .contactMeDesk label, .contactMeDesk input, .contactMeDesk textarea {
+       font-size: .7rem;
+   }
+   .btnFooter {
+       padding: .5rem;
+       font-size: .7rem;
+       margin-top: -6rem;
+       right: 4.9rem;
+       text-shadow: 1px 1px 7px #FC3840;
+       color: #f6f6f6;
    }
 
    /* Footer */
    .footerResponsive {
        display: none;
    }
-
+   .footerDesk {
+       display: inline-block;
+       background-color: #273037;
+       width: 100%;
+       position: relative;
+       text-align: center;
+       color: #f3f3f3;
+   }
+   .h7 {
+       font-size: .7rem;
+       padding-top: .5rem;
+       margin-bottom: .4rem;
+   }
 }
+         
+      

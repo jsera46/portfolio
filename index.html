@@ -60,17 +60,17 @@
      <header class="headerDesk">
       <nav>
         <div class="mycontainerDesk">
-          <h3 class="logo">JAMAR<span>PORTFOLIO</span></h3>
+          <a href="index.html" class="homeLink"><h3 class="logo">JAMAR<span>PORTFOLIO</span></h3></a>
           <ul class="nav-menu">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-            <button class="contact-btn"><a href="">Contact</a></button>
+            <li><a href="#homeD" class="deskHome underline">Home</a></li>
+            <li><a href="#projectsD" class="deskProjects">Projects</a></li>
+            <li><a href="#aboutD" class="deskAbout">About</a></li>
+            <button class="contact-btn"><a href="#contactD">Contact</a></button>
           </ul>
         </div>
       </nav>
      <!-- Main Content -->
-     <div class="mainContent">
+     <div class="mainContent" id="homeD">
        <div class="col-md">
          <img src="assets/images/Profile.jpg" class="headerimg" alt="Jamar Usman">
        </div>
@@ -96,7 +96,7 @@
     </div>
   </section>   
   <!-- desktop -->
-  <section class="projectsDesk">
+  <section class="projectsDesk" id="projectsD">
     <div class="mycontainerDesk1">
         <h3>Recents Projects: Sample of some my work from past year.</h3>
         <hr>
@@ -107,7 +107,7 @@
             <div class="card-body">
               <h5 class="card-title">HCCCI School Website</h5>
               <p class="card-text">This Website is made with my team during our OJT at Classify Inc.</p>
-              <a href="#" class="btn btn-all">Check Here!</a>
+              <a href="http://172.16.0.7:85/" target="_blank" class="btn btn-all">Check Here!</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -156,8 +156,8 @@
       </div>
   </section>
   <!-- Desktop -->
-  <section class="aboutMeDesk">
-    <div class="mycontainer">
+  <section class="aboutMeDesk" id="aboutD">
+    <div class="mycontainerDesk1">
         <h3>ABOUT ME</h3>
         <p class="aboutMeP">Find out who I am, where I'm from and what I'm all about.</p>
         <hr>
@@ -173,7 +173,7 @@
                 <p>I am currently working as OJT in the Classify Inc.. I am always available to discuss your project over the phone or via Skype. These days I enjoy spending my free time reading novels online, watching youtube videos and playing.</p>
                 <hr>
                 <p>If you like my work and have some cool project to work on, just send me direct message or click the button bellow to get list of my contact info.</p>
-                <button class="bntContact"><a href="">Contact me</a></button>
+                <button class="bntContact"><a href="https://docs.google.com/document/d/1OlQEYQaXWe6O_PGv41mtUJRXLd0-DyD4wFC4JMZYFD8/edit?usp=sharing" target="_blank">Download CV</a></button>
             </div>
         </div>
     </div>
@@ -207,27 +207,48 @@
     </div>
   </section>
   <!-- Desktop -->
-  <section class="contactMeDesk">
-    <div class="mycontainer">
-      <h3>Contact me</h3>
-      <p class="contactMep">Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
-      <hr>
-      <div>
-          <div class="col-md contactmee">
-            <div class="fab fa-facebook-f">
-              Add me on Facebook
+  <section class="contactMeDesk" id="contactD">
+    <div class="mycontainerDesk1 dflex">
+      <div class="col-md cmd">
+        <h3>Contact me</h3>
+        <p class="contactMep">Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
+        <div>
+            <div class="col-md contactmee">
+              <div class="fab fa-facebook-f">
+                Add me on Facebook
+              </div>
+              <div class="fab fa-github">
+                Follow me on github
+              </div>
+              <div class="fab fa-viber">
+                Add me on viber: +639553205870
+              </div>
+              <div class="fab fa-skype">
+                Add me on Skype: jsera46@gmail.com
+              </div>
+            </div>          
+        </div>
+      </div>
+      <div class="col-md emailMe">
+        <h3 class="text-primary text-center">Email me</h3>
+        <form
+        action="https://formspree.io/f/moqpkdzz"
+        method="POST"
+        enctype="multipart/form-data">
+          <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" name="name" required>
             </div>
-            <div class="fab fa-github">
-              Follow me on github
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" name="_replyto" required>
             </div>
-            <div class="fab fa-viber">
-              Add me on viber: +639553205870
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea class="form-control" rows="3" name="message"></textarea>
             </div>
-            <div class="fab fa-skype">
-              Add me on Skype: jsera46@gmail.com
-            </div>
-          </div>
-          
+            <button type="submit" class="btn btn-primary btnFooter">Send</button>
+        </form>
       </div>
     </div>
   </section>
@@ -277,46 +298,11 @@
       </div>
   </footer>
   <!-- Desktop -->
-  <footer class="footerDesk">
-    <div class="mycontainer">
-      <div class="col-md">
-      <h2 class="text-primary text-center fHeader">Email me</h2>
+  <div class="footerDesk">
+    <div class="alrightDesk">
+      <p class="h7">© 2021 | All right Reversed.</p>
     </div>
-    <hr>
-    <form class="footerForm"
-      action="https://formspree.io/f/moqpkdzz"
-      method="POST"
-      enctype="multipart/form-data">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" name="name" required>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" name="_replyto" required>
-          </div>
-          <div class="form-group">
-            <label>Your Message</label>
-            <textarea class="form-control" rows="5" name="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btnFooter">Send</button>
-      </form>
-    </div>
-    
-      <div class="fonticon">
-          <div class="col-sm">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-viber"></i></a>
-            <a href=""><i class="fab fa-skype"></i></a>
-          </div>
-          <hr class="hrfooterfont">      
-      </div>
-      
-      <div class="alright">
-        <p class="h6">© 2021 | All right Reversed.</p>
-      </div>
-  </footer>
+  </div>
   <!-- Footer End -->
 
   <!-- Optional JavaScript -->

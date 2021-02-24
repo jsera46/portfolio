@@ -23,8 +23,9 @@
     
   </head>
   <body>
-      <!-- Navbar -->
-     <header>
+      <!-- Navbar Start-->
+      <!-- iphone 6/7/8 to ipadPro -->
+     <header class="headerResponsive">
        <nav>
          <div class="mycontainer">
            <h3 class="logo">JAMAR<span>PORTFOLIO</span></h3>
@@ -55,9 +56,34 @@
         </div>
       </div>
      </header> 
-    
+     <!-- Desktop -->
+     <header class="headerDesk">
+      <nav>
+        <div class="mycontainerDesk">
+          <h3 class="logo">JAMAR<span>PORTFOLIO</span></h3>
+          <ul class="nav-menu">
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About</li>
+            <button class="contact-btn"><a href="">Contact</a></button>
+          </ul>
+        </div>
+      </nav>
+     <!-- Main Content -->
+     <div class="mainContent">
+       <div class="col-md">
+         <img src="assets/images/Profile.jpg" class="headerimg" alt="Jamar Usman">
+       </div>
+       <div class="col-md deskContent">
+         <h2>Hi, I am Jamar Usman</h2>
+         <p>Web Developer</p>
+       </div>
+     </div>
+    </header> 
+    <!-- Nav End -->
 
-  <!-- Projects -->
+  <!-- Projects Starts-->
+  <!-- iphone to ipadpro -->
   <section class="projects">
     <div class="mycontainer">
         <h3>Recents Projects: Sample of some my work from past year.</h3>
@@ -68,9 +94,45 @@
          </div>
          <button class="btnCheckOut"><a>CHECK IT OUT</a></button>
     </div>
-  </section>      
+  </section>   
+  <!-- desktop -->
+  <section class="projectsDesk">
+    <div class="mycontainerDesk1">
+        <h3>Recents Projects: Sample of some my work from past year.</h3>
+        <hr>
+        <h5>My Latest Projects:</h5>
+         <div class="exampleProject">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/project1.PNG" class="card-img-top" alt="Project 2 Example">
+            <div class="card-body">
+              <h5 class="card-title">HCCCI School Website</h5>
+              <p class="card-text">This Website is made with my team during our OJT at Classify Inc.</p>
+              <a href="#" class="btn btn-all">Check Here!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/project2.PNG" class="card-img-top" alt="Parallax Effect 2020">
+            <div class="card-body">
+              <h5 class="card-title">Parallax Effect</h5>
+              <p class="card-text">This is my personal project about parallax effect with little photoshop.</p>
+              <a href="https://jsera46.github.io/parallaxScrolling2020/" class="btn btn-all" target="_blank">Check Here!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/project3.PNG" class="card-img-top" alt="Pipboy Project">
+            <div class="card-body">
+              <h5 class="card-title">Fallout 4 pipboy.</h5>
+              <p class="card-text">This is another personal project using the Pipboy UI of Fallout 4.</p>
+              <a href="https://jsera46.github.io/pipboy/" class="btn btn-all" target="_blank">Check Here!</a>
+            </div>
+          </div>
+         </div>
+    </div>
+  </section>  
+  <!-- Projects End -->
 
-  <!-- About me -->
+  <!-- About me Start-->
+  <!-- iphone to ipadpro -->
   <section class="aboutMe">
       <div class="mycontainer">
           <h3>ABOUT ME</h3>
@@ -93,8 +155,33 @@
           </div>
       </div>
   </section>
+  <!-- Desktop -->
+  <section class="aboutMeDesk">
+    <div class="mycontainer">
+        <h3>ABOUT ME</h3>
+        <p class="aboutMeP">Find out who I am, where I'm from and what I'm all about.</p>
+        <hr>
 
-  <!-- Contact me -->
+        <div class="row">
+            <div class="col-md">
+                <img src="assets/images/bgimg.jpg" alt="Self Photo">
+            </div>
+            <div class="col-md">
+                <h4>Who I Am</h4>
+                <p>My name's Jamar. I'm a web designer and developer based in South Cotabato, Philippines.</p>
+                <p>I am currently working in Classify Inc. as an JuniorWeb Dev to enhance my skills and knowledge. And during by evenings I spend my time working on freelance projects and building my own products.</p>
+                <p>I am currently working as OJT in the Classify Inc.. I am always available to discuss your project over the phone or via Skype. These days I enjoy spending my free time reading novels online, watching youtube videos and playing.</p>
+                <hr>
+                <p>If you like my work and have some cool project to work on, just send me direct message or click the button bellow to get list of my contact info.</p>
+                <button class="bntContact"><a href="">Contact me</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- About me End -->
+
+  <!-- Contact me Start-->
+  <!-- iphone to ipadpro -->
   <section class="contactMe">
     <div class="mycontainer">
       <h3>Contact me</h3>
@@ -119,49 +206,118 @@
       </div>
     </div>
   </section>
-
-      <!-- Footer -->
-      <footer>
-        <div class="mycontainer">
-          <div class="col-md">
-          <h2 class="text-primary text-center fHeader">Email me</h2>
-        </div>
-        <hr>
-        <form class="footerForm"
-          action="https://formspree.io/f/moqpkdzz"
-          method="POST"
-          enctype="multipart/form-data">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" name="name" required>
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control" name="_replyto" required>
-              </div>
-              <div class="form-group">
-                <label>Your Message</label>
-                <textarea class="form-control" rows="5" name="message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btnFooter">Send</button>
-          </form>
-        </div>
-        
-          <div class="fonticon">
-              <div class="col-sm">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-viber"></i></a>
-                <a href=""><i class="fab fa-skype"></i></a>
-              </div>
-              <hr class="hrfooterfont">      
+  <!-- Desktop -->
+  <section class="contactMeDesk">
+    <div class="mycontainer">
+      <h3>Contact me</h3>
+      <p class="contactMep">Do you speak 'Tagalog'? It's ok if you don't, I speak English too.</p>
+      <hr>
+      <div>
+          <div class="col-md contactmee">
+            <div class="fab fa-facebook-f">
+              Add me on Facebook
+            </div>
+            <div class="fab fa-github">
+              Follow me on github
+            </div>
+            <div class="fab fa-viber">
+              Add me on viber: +639553205870
+            </div>
+            <div class="fab fa-skype">
+              Add me on Skype: jsera46@gmail.com
+            </div>
           </div>
           
-          <div class="alright">
-            <p class="h6">© 2021 | All right Reversed.</p>
-          </div>
-      </footer>
+      </div>
+    </div>
+  </section>
+  <!-- Contact me End -->
 
+
+  <!-- Footer Start -->
+  <!-- iphone to ipadpro -->
+  <footer class="footerResponsive">
+    <div class="mycontainer">
+      <div class="col-md">
+      <h2 class="text-primary text-center fHeader">Email me</h2>
+    </div>
+    <hr>
+    <form class="footerForm"
+      action="https://formspree.io/f/moqpkdzz"
+      method="POST"
+      enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea class="form-control" rows="5" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btnFooter">Send</button>
+      </form>
+    </div>
+    
+      <div class="fonticon">
+          <div class="col-sm">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-viber"></i></a>
+            <a href=""><i class="fab fa-skype"></i></a>
+          </div>
+          <hr class="hrfooterfont">      
+      </div>
+      
+      <div class="alright">
+        <p class="h6">© 2021 | All right Reversed.</p>
+      </div>
+  </footer>
+  <!-- Desktop -->
+  <footer class="footerDesk">
+    <div class="mycontainer">
+      <div class="col-md">
+      <h2 class="text-primary text-center fHeader">Email me</h2>
+    </div>
+    <hr>
+    <form class="footerForm"
+      action="https://formspree.io/f/moqpkdzz"
+      method="POST"
+      enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea class="form-control" rows="5" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btnFooter">Send</button>
+      </form>
+    </div>
+    
+      <div class="fonticon">
+          <div class="col-sm">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-viber"></i></a>
+            <a href=""><i class="fab fa-skype"></i></a>
+          </div>
+          <hr class="hrfooterfont">      
+      </div>
+      
+      <div class="alright">
+        <p class="h6">© 2021 | All right Reversed.</p>
+      </div>
+  </footer>
+  <!-- Footer End -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

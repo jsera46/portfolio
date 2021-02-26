@@ -280,7 +280,7 @@ nav .mycontainer {
     display: none;
 }
 .contactMe {
-    background-image: url('/assets/images/contactbg.jpg');
+    background-image: url('../images/contactbg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -543,7 +543,11 @@ footer label {
     .headerDesk {
        height: 90vh;
        display: flex;
-       justify-content: space-between;
+       justify-content: space-between;       
+    }
+    .deskNav {
+        width: 100%;
+        z-index: 35;
     }
     nav {
         border-bottom: none;

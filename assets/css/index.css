@@ -240,7 +240,21 @@ nav .mycontainer {
     color: #f3f3f3;
     background-color: #181511;
 }
-
+.projects .card {
+    background-color: #273037;
+}
+.btn-proj {
+    color: #f3f3f3;
+    background-color: #B0967B;
+    border-radius: 8px;
+    padding: .3rem .6rem;
+}
+.pbtn, .nbtn {
+    background: transparent;
+    border: none;
+    backdrop-filter: blur(40px);
+    margin: 9rem 0;
+}
 /* About Me */
 .aboutMeDesk {
     display: none;
